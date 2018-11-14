@@ -32,7 +32,6 @@ namespace TAS.Test.Core
                     // Se parsea la respuesta y se serializa a JSON a un objeto dynamic
                     dynamic mResponseJSON = JsonConvert.DeserializeObject(reader.ReadToEnd());
 
-                    //System.Console.WriteLine("Código de respuesta: {0}", mResponseJSON.response_code);
                     if (mResponseJSON.Count >= 1)
                     {
                         System.Console.WriteLine("Item completo -> {0}", mResponseJSON[0].response);
